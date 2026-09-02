@@ -27,7 +27,12 @@
 .sidebar a {
   text-decoration: none;
 }
-
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
 main {
   margin-left: 250px;
   padding: 40px;
