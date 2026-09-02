@@ -9,7 +9,7 @@ Link para [Linkedin](https://www.linkedin.com/in/william-toshio-watanabe-jugue-9
 
 # Quem sou
 
-- Sou **Engenheiro Físico pela USP** (2020) e **Doutor em Física pela UNICAMP** (2026). Tenho muita facilidade com matemática e física, tanto de ensino médio, quanto a nível universitário. Tenho experiência sólida em duas frentes: acadêmica e corporativa.
+- Sou **Engenheiro Físico pela USP** (2020) e **Doutor em Física pela UNICAMP** (2026). Tenho muita facilidade com matemática e física, tanto de ensino médio, quanto a nível universitário. Tenho experiência sólida em duas frentes: acadêmica e corporativa. Estou em transição de carreira para ser analista de dados.
 
 - No quesito corporativo, posso auxiliar com **Python**, MATLAB para engenharia, C++ para programação; Pacote Office: **Excel**, Word, Powerpoint, Outlook, Publisher; Para criação de dashboards: **Power BI**. Análise de dados: Python (*pandas*) e **SQL**. Também complemento com estudo de IA tanto em Python (*scikit-learn*) quanto assistentes virtuais de IA como Claude, Gemini e Chatgpt para automação e resolução de tarefas.
 
@@ -26,6 +26,7 @@ Link para [Linkedin](https://www.linkedin.com/in/william-toshio-watanabe-jugue-9
     * Estudou a técnica de tratamento de câncer (ainda em desenvolvimento) Targeted Radionuclide Therapy;
     * Obteve dados via simulação Monte Carlo, tratou estatisticamente os dados, criou gráficos e interpretou o dano causado por mais de 10 isótopos radioativos possíveis para a técnica;
     * Ministrou aulas e auxiliou entre 2022 e 2024 as disciplinas de graduação Física Básica I e Física Experimental III (duas versões da disciplina). Tem experiência em trabalhos em grupo, escrita científica, técnicas de estudo, apresentação de trabalhos.
+    * Participou do I encontro de GEANT4/ROOT na UNIFESP Diadema. O *Project Geant* é um projeto aberto em colaboração com o CERN que é a base para a simulação Monte Carlo feita durante o doutorado para simular as interações da radiação com a matéria e estudar o dano.
 * Em transição para carreira de analista de dados. Estuda pela Hashtag Treinamentos:
     * Python;
     * Excel;
