@@ -35,6 +35,11 @@
   object-fit: cover;
   border-radius: 50%;
 }
+.wrapper {
+  max-width: 1200px;
+  width: calc(100% - 250px);
+  box-sizing: border-box;
+}
 main {
   margin-left: 250px;
   padding: 40px;
