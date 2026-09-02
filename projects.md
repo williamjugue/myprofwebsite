@@ -14,7 +14,8 @@ Essas extensões podem ser instaladas via pip
     pip install Pillow
 
 ```
-ou via conda, substituindo **pip** por **conda**
+ou via conda, substituindo **pip** por **conda**.
+
 Para gerar um código simples, podemos fazer o seguinte:
 ```
     import qrcode
