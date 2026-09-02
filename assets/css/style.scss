@@ -38,4 +38,7 @@
 main {
   margin-left: 250px;
   padding: 40px;
+  max-width: 1400px;
+  width: calc(100% - 250px);
+  box-sizing: border-box;
 }
