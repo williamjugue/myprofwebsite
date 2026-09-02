@@ -1,4 +1,4 @@
-Read more [About Me]({{ site.baseurl }}{% link about.md %}).
+
 
 # Quem sou
 
