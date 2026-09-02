@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Contato e serviços"
-permalink: /contato/
+permalink: /contact/
 ---
 
 # Para contato, utilizar o LinkedIn ou email
