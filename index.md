@@ -10,4 +10,4 @@ Link para [Linkedin](https://www.linkedin.com/in/william-toshio-watanabe-jugue-9
 Abaixo, estão alguns exemplo do meu portfolio pessoal/profissional feito em Python e Power BI:
 
 Exemplo de código em SQL do banco de dados Contoso disponibilizado pela Microsoft
-<img src="/assets/images/SQL2.jpg" alt="SQL example" width="200">
+![SQL exemplo 1]({{ "/assets/images/SQL2.jpg" | relative_url }})
