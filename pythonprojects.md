@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Meus projetos em Python"
-permalink: /projects/
+permalink: /pythonprojects/
 ---
 
 # Tipo de projetos que estudo
