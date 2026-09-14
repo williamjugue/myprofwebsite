@@ -27,7 +27,7 @@ Link para [Linkedin](https://www.linkedin.com/in/william-toshio-watanabe-jugue-9
     * Obteve dados via simulação Monte Carlo, tratou estatisticamente os dados, criou gráficos e interpretou o dano causado por mais de 10 isótopos radioativos possíveis para a técnica;
     * Ministrou aulas e auxiliou entre 2022 e 2024 as disciplinas de graduação Física Básica I e Física Experimental III (duas versões da disciplina). Tem experiência em trabalhos em grupo, escrita científica, técnicas de estudo, apresentação de trabalhos.
     * Participou do I encontro de GEANT4/ROOT na UNIFESP Diadema. O *Project Geant* é um projeto aberto em colaboração com o CERN que é a base para a simulação Monte Carlo feita durante o doutorado para simular as interações da radiação com a matéria e estudar o dano.
-* Em transição para carreira de analista de dados. Estuda pela Hashtag Treinamentos:
+* Está na carreira de analista de dados. Tem as seguintes habilidades:
     * Python;
     * Excel;
     * Power BI;
