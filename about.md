@@ -5,7 +5,10 @@ permalink: /about/
 ---
 
 Link para [Linkedin](https://www.linkedin.com/in/william-toshio-watanabe-jugue-9733893aa/)
-
+Link para currículo
+<a href="{{ '/assets/pdf/curriculo_williamjugue.pdf' | relative_url }}" target="_blank" class="botao-curriculo">
+  Ver currículo
+</a>
 
 # Quem sou
 

@@ -7,6 +7,11 @@ Para contato, mande um email para williamtwjugue@hotmail.com
 
 Link para [LinkedIn](https://www.linkedin.com/in/william-toshio-watanabe-jugue-9733893aa/)
 
+Link para currículo
+<a href="{{ '/assets/pdf/curriculo_williamjugue.pdf' | relative_url }}" target="_blank" class="botao-curriculo">
+  Ver currículo
+</a>
+
 Abaixo, estão alguns exemplo do meu portfolio pessoal/profissional feito em Power BI e SQL:
 
 Exemplo de um Relatório feito em Power BI utilizando dados "Company Financials Dataset
