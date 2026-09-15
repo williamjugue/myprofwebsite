@@ -15,7 +15,6 @@ O Ac225, o mais complexo exemplo estudado na tese, pode produzir resultados como
 
 Um isótopo que decai emitindo elétrons Auger, o Ga67, produz um padrão de quebras duplas do DNA interessante (O DNA tem duas fitas e a quebra das duas tem difícil reparo celular):
 
-![DSB Ga67]({{ "/assets/images/DSBY_Ga67.pdf" | relative_url }})
 
 Concluímos que vários isótopos de emissão alfa (núcleos de hélio-4) são muito eficientes para curto alcance. Se quisermos atingir distâncias maiores, precisamos utilizar elétrons de emissão beta + ou -. A contribuição Auger de longo alcance complementa vários casos beta para um alcance mais curto.
 
