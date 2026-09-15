@@ -9,7 +9,7 @@ Com orientação do Dr. Mario Bernal do Instituto de Física da UNICAMP, defendi
 
 Alguns isótopos radioativos possuem complexas cadeias de decaimento, como pode ser visto o exemplo do Ac225 aqui:
 
-![Decay Ac225]({{ "/assets/images/Simplified-decay-chain-of-Ac-225-Adapted-from-Huang-et-al-2012.webp" | relative_url }})
+<img src="{{ '/assets/images/Simplified-decay-chain-of-Ac-225-Adapted-from-Huang-et-al-2012.webp' | relative_url }}" alt="Decay Ac225" height="300">
 
 O Ac225, o mais complexo exemplo estudado na tese, pode produzir resultados como este:
 
@@ -27,7 +27,9 @@ Concluímos que vários isótopos de emissão alfa (núcleos de hélio-4) são m
 No meu estágio (em 2020), participei do grupo de Óptica do LNLS. Estudei a luz síncrotron, algumas características de linhas de luz, observei o desenvolvimento de algumas linhas durante os meses que fui estagiário no Síncrotron. Escrevi meu TCC sobre os resultados obtidos nas linhas de luz **Cateretê** e **Carnaúba** em questão das características do feixe de luz, os elementos de cada linha e suas características em modificar o feixe em divergência, fluxo, resolução e outras características.
 
 Abaixo, mostro um exemplo de um protótipo da linha de luz Cateretê montada no software OASYS com o auxilio do pacote SHADOW, para simulação das linhas de luz
-<img src="{{ '/assets/images/Simplified-decay-chain-of-Ac-225-Adapted-from-Huang-et-al-2012.webp' | relative_url }}" alt="Decay Ac225" height="300">
+
+![Linha simulada Caterete]({{ "/assets/images/workspacecaterete.png" | relative_url }})
+
 
 O material do espelho e o posicionamento espacial dele permite controlar várias características do feixe até o destino final.
 
