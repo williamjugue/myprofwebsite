@@ -9,7 +9,7 @@ Com orientação do Dr. Mario Bernal do Instituto de Física da UNICAMP, defendi
 
 Alguns isótopos radioativos possuem complexas cadeias de decaimento, como pode ser visto o exemplo do Ac225 aqui:
 
-<img src="{{ '/assets/images/Simplified-decay-chain-of-Ac-225-Adapted-from-Huang-et-al-2012.webp' | relative_url }}" alt="Decay Ac225" height="300">
+<img src="{{ '/assets/images/Simplified-decay-chain-of-Ac-225-Adapted-from-Huang-et-al-2012.webp' | relative_url }}" alt="Decay Ac225" height="450">
 
 O Ac225, o mais complexo exemplo estudado na tese, pode produzir resultados como este:
 
