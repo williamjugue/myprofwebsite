@@ -9,11 +9,9 @@ Com orientação do Dr. Mario Bernal do Instituto de Física da UNICAMP, defendi
 
 Alguns isótopos radioativos possuem complexas cadeias de decaimento, como pode ser visto o exemplo do Ac225 aqui:
 
-![Decay Ac225]({{ "/assets/images/Simplified-decay-chain-of-Ac-225-Adapted-from-Huang-et-al-2012.jpg" | relative_url }})
 
 O Ac225, o mais complexo exemplo estudado na tese, pode produzir resultados como este:
 
-![Dose Ac225]({{ "/assets/images/Dose_Ac225.pdf" | relative_url }})
 
 Um isótopo que decai emitindo elétrons Auger, o Ga67, produz um padrão de quebras duplas do DNA interessante (O DNA tem duas fitas e a quebra das duas tem difícil reparo celular):
 
