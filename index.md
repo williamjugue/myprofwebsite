@@ -12,16 +12,24 @@ Link para currículo
   Ver currículo
 </a>
 
-Abaixo, estão alguns exemplo do meu portfolio pessoal/profissional feito em Power BI e SQL:
+Abaixo, estão alguns exemplos do meu portfolio pessoal/profissional feito em Power BI e SQL:
 
-Exemplo de um Relatório feito em Power BI utilizando dados "Company Financials Dataset
+## Exemplo de um Relatório de RH feito utilizando dados fictícios "Human Resource Data Set (The Company)" disponiblizado no site Kaggle em [Kaggle Datasets](https://www.kaggle.com/datasets/koluit/human-resource-data-set-the-company?resource=download) por Koluit.
+
+![Power BI exemplo 2]({{ "/assets/images/1790729691810-ffa0723f-f028-43cb-af49-f22a64884d71_1.jpg" | relative_url }})
+
+Mostramos funcionários ativos, desligados, turnoff, distribuição dos funcionários ativos por área e cargo, contratações por ano e distribuição de gênero na empresa.
+
+## Exemplo de um Relatório feito em Power BI utilizando dados "Company Financials Dataset
 " disponiblizado no site Kaggle em [Kaggle Datasets](https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data) por Atharva Arya.
 
 ![Power BI exemplo 1]({{ "/assets/images/1.jpg" | relative_url }})
 
-Aqui está uma amostra do tratamento feito em Power Query dentro do Power BI
+Colocamos as principais métricas de um dashboard de vendas, além dos produtos mais vendidos, faturamento mensal, faturamento por país e quais fatias do mercado são as principais consumidoras
+
+## Aqui está uma amostra do tratamento feito em Power Query dentro do Power BI
 
 ![Power Query exemplo 1]({{ "/assets/images/Power Query BI.jpg" | relative_url }})
 
-Exemplo de código em SQL do banco de dados Contoso disponibilizado pela Microsoft
+## Exemplo de código em SQL do banco de dados Contoso disponibilizado pela Microsoft
 ![SQL exemplo 1]({{ "/assets/images/SQL2.jpg" | relative_url }})
