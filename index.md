@@ -16,7 +16,7 @@ Abaixo, estão alguns exemplos do meu portfolio pessoal/profissional feito em Po
 
 ## Exemplo de um Relatório de RH feito utilizando dados fictícios "Human Resource Data Set (The Company)" disponiblizado no site Kaggle em [Kaggle Datasets](https://www.kaggle.com/datasets/koluit/human-resource-data-set-the-company?resource=download) por Koluit.
 
-![Power BI exemplo 2]({{ "/assets/images/1790729691810-ffa0723f-f028-43cb-af49-f22a64884d71_1.jpg" | relative_url }})
+![Power BI exemplo 2]({{ "/assets/images/dashboard_rh.jpg" | relative_url }})
 
 Mostramos funcionários ativos, desligados, turnoff, distribuição dos funcionários ativos por área e cargo, contratações por ano e distribuição de gênero na empresa.
 
