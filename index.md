@@ -21,6 +21,9 @@ disponiblizado no site Kaggle em [Kaggle Datasets](https://www.kaggle.com/datase
 
 Mostramos funcionários ativos, desligados, turnoff, distribuição dos funcionários ativos por área e cargo, contratações por ano e distribuição de gênero na empresa.
 
+![Power BI exemplo 2.1]({{ "/assets/images/dashboard rh3_page-0002.jpg" | relative_url }})
+Mostramos quantidade de funcionários PcD na empresa, escolaridade, saída de funcionários ao longo dos anos, distribuições de hierarquia, etnia e tipo de serviço.
+
 ## Exemplo de um Relatório feito em Power BI utilizando dados "Company Financials Dataset"
 
 Dados de uma empresa fictícia de vendas disponiblizado no site Kaggle em [Kaggle Datasets](https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data) por Atharva Arya.
