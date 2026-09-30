@@ -21,7 +21,7 @@ Abaixo, estão alguns exemplos do meu portfolio pessoal/profissional feito em Po
 Mostramos funcionários ativos, desligados, turnoff, distribuição dos funcionários ativos por área e cargo, contratações por ano e distribuição de gênero na empresa.
 
 ## Exemplo de um Relatório feito em Power BI utilizando dados "Company Financials Dataset
-" disponiblizado no site Kaggle em [Kaggle Datasets](https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data) por Atharva Arya.
+Dados de uma empresa fictícia de vendas disponiblizado no site Kaggle em [Kaggle Datasets](https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data) por Atharva Arya.
 
 ![Power BI exemplo 1]({{ "/assets/images/1.jpg" | relative_url }})
 
