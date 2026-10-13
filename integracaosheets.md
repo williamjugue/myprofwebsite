@@ -10,7 +10,7 @@ Clique aqui para voltar para a página anterior <a href="{{ '/PythonProjects/' |
 
 > Passo 1: Ativar na página do Google Developer Console o link com a API
 
-<img src="{{ '/assets/imagesgooglesheet/passo1.png' | relative_url }}" alt="Google Developer Console" width="300">
+<img src="{{ '/assets/imagesgooglesheet/passo1.png' | relative_url }}" alt="Google Developer Console" width="480">
 
 Na primeira vez que entrar, deve aceitar os termos de uso da plataforma.
 
@@ -60,10 +60,9 @@ Com a credencial criada, guardar a chave secreta ou baixar o arquivo JSON. Você
 
 Na documentação, devemos instalar na sua distribuição Python a API do Google Sheets
 
-'''
-    python3 -m pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
-'''
-
+```   
+python3 -m pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+```
 Agora, terminamos a configuração. Podemos rodar um exemplo:
 
 > Passo 9: Crie uma planilha Google. Copie o ID da planilha, que está entre duas barras / / 
@@ -152,7 +151,7 @@ Temos um dicionário com chaves e valores como lista de listas Python.
 
 > Passo 12: Adicionar uma informação em outra célula. Vamos adicionar na célula A14 a informação "Janeiro2"
 
-1. Vamos copiar o código result e editar para fazer um update       
+**12.1** Vamos copiar o código result e editar para fazer um update       
 
 ```
     result = (
@@ -164,8 +163,6 @@ Temos um dicionário com chaves e valores como lista de listas Python.
 
 tornar-se-á
 
-2. 
-
 ```
     result = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                     range="A14",valueInputOption="USER_ENTERED",
@@ -173,7 +170,7 @@ tornar-se-á
 ```
 com get => update, range => "A14";
 
-3. Adicionando os seguintes parâmetros
+**12.2** Adicionando os seguintes parâmetros
 valueInputOption="RAW" ou "USER_ENTERED" , se você quiser o input literal string (RAW) ou como o usuário inseriria na planilha no aplicativo "USER_ENTERED"
 body={'values': adicionar_valores}, sendo adicionar_valores *definido antes de result* como a lista da lista das variáveis que você quer adicionar.
 ```
@@ -185,7 +182,7 @@ Dessa forma, temos o seguinte resultado
 
 <img src="{{ '/assets/imagesgooglesheet/passo12.png' | relative_url }}" alt="janeiro2" width="600">
 
-4. Para adicionar mais de uma informação, vamos acrescentar mais células
+**12.3** Para adicionar mais de uma informação, vamos acrescentar mais células
 
 ```
     adicionar_valores = [
@@ -198,14 +195,14 @@ Dessa forma, temos o seguinte resultado
 
 > Passo 13: Podemos fazer um loop para preencher várias células de uma só vez. 
 
-1. Vamos usar os dados de Janeiro2 e Fevereiro2. Para isso, alteraremos o intervalo de trabalho do GET para A1:B15
+**13.1** Vamos usar os dados de Janeiro2 e Fevereiro2. Para isso, alteraremos o intervalo de trabalho do GET para A1:B15
 ```
 SAMPLE_RANGE_NAME = "Página1!A1:B15"
 ```
-2. Vamos pegar uma lista com apenas os valores da variável result do GET.
+**13.2** Vamos pegar uma lista com apenas os valores da variável result do GET.
 valores = result['values']
 
-3. Definimos a coluna "Imposto" em C1 com:
+**13.3** Definimos a coluna "Imposto" em C1 com:
 
 ```
 adicionar_valores = [
@@ -213,7 +210,7 @@ adicionar_valores = [
         ]
 ```
 
-4. Criamos o loop for para percorrer todas as linhas e calcular o imposto. Note que precisamos transformar o valor em moeda para número puro do Python com a função REPLACE. Depois escrevemos na planilha com o formato
+**13.4** Criamos o loop for para percorrer todas as linhas e calcular o imposto. Note que precisamos transformar o valor em moeda para número puro do Python com a função REPLACE. Depois escrevemos na planilha com o formato
 
 ```
 for i, linha in enumerate(valores):
@@ -226,13 +223,14 @@ for i, linha in enumerate(valores):
         adicionar_valores.append([imposto]) #cria uma nova linha a cada lista
 ```
 
-5. Colocamos **fora do loop FOR** a ação de atualizar a planilha, colocando o range em C1
+**13.5** Colocamos **fora do loop FOR** a ação de atualizar a planilha, colocando o range em C1
+
 ``` 
     result = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                             range="C1",valueInputOption="USER_ENTERED",
                             body={'values': adicionar_valores}).execute()
 ```
-z
+
 Aqui está o resultado final:
 
 <img src="{{ '/assets/imagesgooglesheet/passo13.png' | relative_url }}" alt="Loop FOR" width="600">
