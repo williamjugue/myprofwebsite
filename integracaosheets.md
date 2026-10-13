@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: "Integração Google Sheets - Python"
