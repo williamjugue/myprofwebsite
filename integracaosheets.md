@@ -10,26 +10,30 @@ Clique aqui para voltar para a página anterior <a href="{{ '/PythonProjects/' |
 
 > Passo 1: Ativar na página do Google Developer Console o link com a API
 
-<img src="{{ '/assets/imagesgooglesheet/passo1.png' | relative_url }}" alt="Google Developer Console" height="200">
+<img src="{{ '/assets/imagesgooglesheet/passo1.png' | relative_url }}" alt="Google Developer Console" height="600">
 
 Na primeira vez que entrar, deve aceitar os termos de uso da plataforma.
 
 > Passo 2: Clicar em **Selecionar um projeto** e criar Novo Projeto
 
-<img src="{{ '/assets/imagesgooglesheet/passo2.png' | relative_url }}" alt="Criar novo projeto" width="200">
-<img src="{{ '/assets/imagesgooglesheet/passo2_5.png' | relative_url }}" alt="Criar novo projeto2" width="200">
+<img src="{{ '/assets/imagesgooglesheet/passo2.png' | relative_url }}" alt="Criar novo projeto" width="600">
+
+<img src="{{ '/assets/imagesgooglesheet/passo2_5.png' | relative_url }}" alt="Criar novo projeto2" width="600">
 
 > Passo 3: Ativar as APIs do Google Drive e Google Sheets.
 
 Na barra de pesquisa, digitar "Google Drive API" e "Google Sheets API" e ativá-las
 
-<img src="{{ '/assets/imagesgooglesheet/passo3_1.png' | relative_url }}" alt="Google Docs" width="200">
-<img src="{{ '/assets/imagesgooglesheet/passo3_2.png' | relative_url }}" alt="Google Sheets" width="200">
+<img src="{{ '/assets/imagesgooglesheet/passo3_1.png' | relative_url }}" alt="Google Docs" width="600">
+
+<img src="{{ '/assets/imagesgooglesheet/passo3_2.png' | relative_url }}" alt="Google Sheets" width="600">
 
 > Passo 4: Nas 3 barras horizontais, ao lado do "Google Cloud", acessar "API e serviços" -> "API e serviços ativados"
-<img src="{{ '/assets/imagesgooglesheet/passo4.png' | relative_url }}" alt="API e serviços" width="200">
+
+<img src="{{ '/assets/imagesgooglesheet/passo4.png' | relative_url }}" alt="API e serviços" width="600">
 
 Ir em "Tela de permissão OAuth" para configurar a autenticação
+
 <img src="{{ '/assets/imagesgooglesheet/passo4_2.png' | relative_url }}" alt="OAuth" width="200">
 
 E começar a configurar as permissões
@@ -38,13 +42,13 @@ E começar a configurar as permissões
 
 > Passo 6: Configurar os usuários teste. Ir na aba "Público-alvo".
 
-<img src="{{ '/assets/imagesgooglesheet/passo6.png' | relative_url }}" alt="Público alvo" width="100">
+<img src="{{ '/assets/imagesgooglesheet/passo6.png' | relative_url }}" alt="Público alvo" width="300">
 
 Preencha os emails dos usuários teste.
 
 > Passo 7: Configurar os clientes do aplicativo (usuários) -> Criar ID do cliente do OAuth
 
-<img src="{{ '/assets/imagesgooglesheet/passo7.png' | relative_url }}" alt="Credenciais" width="200">
+<img src="{{ '/assets/imagesgooglesheet/passo7.png' | relative_url }}" alt="Credenciais" width="600">
 
 Preencher o tipo de aplicativo "App para computador" e dar um nome à sua credencial.
 
@@ -52,7 +56,7 @@ Com a credencial criada, guardar a chave secreta ou baixar o arquivo JSON. Você
 
 > Passo 8: Em posse do ID do cliente OAuth, colocar agora as credenciais na pasta do código Python. Vamos abrir a documentação da API do Google Sheets no Python.
 
-<img src="{{ '/assets/imagesgooglesheet/passo8.png' | relative_url }}" alt="API Python" width="200">
+<img src="{{ '/assets/imagesgooglesheet/passo8.png' | relative_url }}" alt="API Python" width="600">
 
 Na documentação, devemos instalar na sua distribuição Python a API do Google Sheets
 
@@ -63,7 +67,7 @@ Na documentação, devemos instalar na sua distribuição Python a API do Google
 Agora, terminamos a configuração. Podemos rodar um exemplo:
 
 > Passo 9: Crie uma planilha Google. Copie o ID da planilha, que está entre duas barras / / 
-<img src="{{ '/assets/imagesgooglesheet/passo9.png' | relative_url }}" alt="Id planilha" width="200">
+<img src="{{ '/assets/imagesgooglesheet/passo9.png' | relative_url }}" alt="Id planilha" width="600">
 
 
 > Passo 10: Rode o exemplo de amostra da documentação. No caso, vamos logar no aplicativo. Copie o código exemplo e edite:
@@ -138,11 +142,11 @@ Agora, terminamos a configuração. Podemos rodar um exemplo:
 
 > Passo 11: Execute o código e faça login. Aceite as permissões.
 
-<img src="{{ '/assets/imagesgooglesheet/passo11.png' | relative_url }}" alt="Login" width="200">
+<img src="{{ '/assets/imagesgooglesheet/passo11.png' | relative_url }}" alt="Login" width="600">
 
 O output do seu código deve ser algo assim:
 
-<img src="{{ '/assets/imagesgooglesheet/passo11_2.png' | relative_url }}" alt="Output1" width="200">
+<img src="{{ '/assets/imagesgooglesheet/passo11_2.png' | relative_url }}" alt="Output1" width="600">
 
 Temos um dicionário com chaves e valores como lista de listas Python.
 
@@ -177,7 +181,7 @@ body={'values': adicionar_valores}, sendo adicionar_valores *definido antes de r
 
 Dessa forma, temos o seguinte resultado
 
-<img src="{{ '/assets/imagesgooglesheet/passo12.png' | relative_url }}" alt="janeiro2" width="200">
+<img src="{{ '/assets/imagesgooglesheet/passo12.png' | relative_url }}" alt="janeiro2" width="600">
 
 4. Para adicionar mais de uma informação, vamos acrescentar mais células
     adicionar_valores = [
@@ -185,7 +189,7 @@ Dessa forma, temos o seguinte resultado
         ["Fevereiro2","R$ 3002,50"],
     ]
 
-<img src="{{ '/assets/imagesgooglesheet/passo12_2.png' | relative_url }}" alt="fevereiro2" width="200">
+<img src="{{ '/assets/imagesgooglesheet/passo12_2.png' | relative_url }}" alt="fevereiro2" width="600">
 
 > Passo 13: Podemos fazer um loop para preencher várias células de uma só vez. 
 
@@ -218,5 +222,5 @@ for i, linha in enumerate(valores):
 
 Aqui está o resultado final:
 
-<img src="{{ '/assets/imagesgooglesheet/passo13.png' | relative_url }}" alt="Loop FOR" width="200">
+<img src="{{ '/assets/imagesgooglesheet/passo13.png' | relative_url }}" alt="Loop FOR" width="600">
 
