@@ -10,7 +10,7 @@ Clique aqui para voltar para a página anterior <a href="{{ '/PythonProjects/' |
 
 > Passo 1: Ativar na página do Google Developer Console o link com a API
 
-<img src="{{ '/assets/imagesgooglesheet/passo1.png' | relative_url }}" alt="Google Developer Console" height="600">
+<img src="{{ '/assets/imagesgooglesheet/passo1.png' | relative_url }}" alt="Google Developer Console" width="300">
 
 Na primeira vez que entrar, deve aceitar os termos de uso da plataforma.
 
@@ -34,7 +34,7 @@ Na barra de pesquisa, digitar "Google Drive API" e "Google Sheets API" e ativá-
 
 Ir em "Tela de permissão OAuth" para configurar a autenticação
 
-<img src="{{ '/assets/imagesgooglesheet/passo4_2.png' | relative_url }}" alt="OAuth" width="200">
+<img src="{{ '/assets/imagesgooglesheet/passo4_2.png' | relative_url }}" alt="OAuth" width="600">
 
 E começar a configurar as permissões
 
@@ -48,7 +48,7 @@ Preencha os emails dos usuários teste.
 
 > Passo 7: Configurar os clientes do aplicativo (usuários) -> Criar ID do cliente do OAuth
 
-<img src="{{ '/assets/imagesgooglesheet/passo7.png' | relative_url }}" alt="Credenciais" width="600">
+<img src="{{ '/assets/imagesgooglesheet/passo7.png' | relative_url }}" alt="Credenciais" width="700">
 
 Preencher o tipo de aplicativo "App para computador" e dar um nome à sua credencial.
 
@@ -67,7 +67,7 @@ Na documentação, devemos instalar na sua distribuição Python a API do Google
 Agora, terminamos a configuração. Podemos rodar um exemplo:
 
 > Passo 9: Crie uma planilha Google. Copie o ID da planilha, que está entre duas barras / / 
-<img src="{{ '/assets/imagesgooglesheet/passo9.png' | relative_url }}" alt="Id planilha" width="600">
+<img src="{{ '/assets/imagesgooglesheet/passo9.png' | relative_url }}" alt="Id planilha" width="700">
 
 
 > Passo 10: Rode o exemplo de amostra da documentação. No caso, vamos logar no aplicativo. Copie o código exemplo e edite:
@@ -77,7 +77,7 @@ Agora, terminamos a configuração. Podemos rodar um exemplo:
 3. Editar o intervalo a ser trabalho. No meu caso, criei uma planilha Página1 que vai da célula A1 até B13
     SAMPLE_RANGE_NAME = "Página1!A1:B13"
 
-
+```
     import os.path
 
     from google.auth.transport.requests import Request
@@ -138,7 +138,7 @@ Agora, terminamos a configuração. Podemos rodar um exemplo:
 
     if __name__ == "__main__":
         main()
-
+```
 
 > Passo 11: Execute o código e faça login. Aceite as permissões.
 
@@ -154,58 +154,68 @@ Temos um dicionário com chaves e valores como lista de listas Python.
 
 1. Vamos copiar o código result e editar para fazer um update       
 
+```
     result = (
                 sheet.values()
                 .get(spreadsheetId=SAMPLE_SPREADSHEET_ID, range=SAMPLE_RANGE_NAME)
                 .execute()
             )
+```
 
 tornar-se-á
 
 2. 
 
-
+```
     result = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                     range="A14",valueInputOption="USER_ENTERED",
                                     body={'values': adicionar_valores}).execute()
-
+```
 com get => update, range => "A14";
 
 3. Adicionando os seguintes parâmetros
 valueInputOption="RAW" ou "USER_ENTERED" , se você quiser o input literal string (RAW) ou como o usuário inseriria na planilha no aplicativo "USER_ENTERED"
 body={'values': adicionar_valores}, sendo adicionar_valores *definido antes de result* como a lista da lista das variáveis que você quer adicionar.
-
+```
     adicionar_valores = [
         ["Janeiro1"],
     ]
-
+```
 Dessa forma, temos o seguinte resultado
 
 <img src="{{ '/assets/imagesgooglesheet/passo12.png' | relative_url }}" alt="janeiro2" width="600">
 
 4. Para adicionar mais de uma informação, vamos acrescentar mais células
+
+```
     adicionar_valores = [
         ["Janeiro2", "R$ 250000,00"],
         ["Fevereiro2","R$ 3002,50"],
     ]
+```
 
 <img src="{{ '/assets/imagesgooglesheet/passo12_2.png' | relative_url }}" alt="fevereiro2" width="600">
 
 > Passo 13: Podemos fazer um loop para preencher várias células de uma só vez. 
 
 1. Vamos usar os dados de Janeiro2 e Fevereiro2. Para isso, alteraremos o intervalo de trabalho do GET para A1:B15
+```
 SAMPLE_RANGE_NAME = "Página1!A1:B15"
-
+```
 2. Vamos pegar uma lista com apenas os valores da variável result do GET.
 valores = result['values']
 
 3. Definimos a coluna "Imposto" em C1 com:
 
+```
 adicionar_valores = [
             ["Imposto"],
         ]
+```
 
 4. Criamos o loop for para percorrer todas as linhas e calcular o imposto. Note que precisamos transformar o valor em moeda para número puro do Python com a função REPLACE. Depois escrevemos na planilha com o formato
+
+```
 for i, linha in enumerate(valores):
     if i > 0: #pula o cabeçalho
         vendas = linha[1] 
@@ -214,12 +224,15 @@ for i, linha in enumerate(valores):
         imposto = vendas*0.2
         imposto = f'R$ {imposto:.2f}'.replace(".",",") #transforma em moeda no padrao brasileiro com 2 casas decimais
         adicionar_valores.append([imposto]) #cria uma nova linha a cada lista
+```
 
 5. Colocamos **fora do loop FOR** a ação de atualizar a planilha, colocando o range em C1
+``` 
     result = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                             range="C1",valueInputOption="USER_ENTERED",
                             body={'values': adicionar_valores}).execute()
-
+```
+z
 Aqui está o resultado final:
 
 <img src="{{ '/assets/imagesgooglesheet/passo13.png' | relative_url }}" alt="Loop FOR" width="600">
