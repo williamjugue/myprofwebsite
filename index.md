@@ -1,6 +1,6 @@
 # Boas vindas
 
-Seja muito bem vindo à minha página pessoal e profissional.
+Seja muito bem vindo à minha página pessoal.
 Aqui eu mostro sobre minha trajetória profissional, meus projetos e alguns dashboards como exemplos profissionais.
 
 Para contato, mande um email para williamtwjugue@hotmail.com 
