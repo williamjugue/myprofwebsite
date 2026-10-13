@@ -67,4 +67,4 @@ Aqui está um exemplo de gráfico rudimentar gerado com os últimos 30 dias de c
 
 
 4. Para ver um tutorial detalhado sobre como fazer integração Python - Google Planilhas, deixo o link abaixo
-<a href="{{ '/integracaosheets/' | relative_url }}">Integração</a>
+<a href="{{ '/integracaosheets/' | relative_url }}">Integração Python - Google Sheets</a>
