@@ -68,3 +68,27 @@ Aqui está um exemplo de gráfico rudimentar gerado com os últimos 30 dias de c
 
 4. Para ver um tutorial detalhado sobre como fazer integração Python - Google Planilhas, deixo o link abaixo
 <a href="{{ '/integracaosheets/' | relative_url }}">Integração Python - Google Sheets</a>
+
+5. PROCV do Excel em Python
+
+```
+    import pandas as pd
+    path = r'C:/Users/william/Excel/' #caminho da arquivo
+    filename = r'dados.xlsx'
+    io = path + filename
+    df = pd.read_excel(io,0,index_col=0) #seleciona o arquivo, a primeira planilha do arquivo (posição 0) e determina o rótulo de índice das colunas como sendo a primeira coluna (dos nomes)
+
+```
+
+Para uma coluna de cadastro de funcionários, temos Nome Completo, CPF, Salário e Gênero. Para obter a lista de todos os salários, usamos uma função simples do pandas **df['Nome da Coluna']**
+```
+    salario = df['Salário']
+    print(salario)
+```
+
+Para procurar em uma linha X e coluna Y, utilizamos a função **loc**
+```
+    cpfcaio = df.loc['Caio Marques','CPF'] #com primeiro argumento sendo o nome; o segundo, coluna de CPFs
+    print(cpfcaio)
+```
+
