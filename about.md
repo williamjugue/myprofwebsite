@@ -4,9 +4,14 @@ title: "Sobre mim"
 permalink: /about/
 ---
 
-Link para [Linkedin](https://www.linkedin.com/in/william-toshio-watanabe-jugue-9733893aa/)
-Link para currículo
-<a href="{{ '/assets/pdf/curriculo_williamjugue.pdf' | relative_url }}" target="_blank" class="botao-curriculo">
+Link para [Linkedin](https://www.linkedin.com/in/william-jugue-phd-9733893aa/)
+Link para currículo de Analista de Dados
+<a href="{{ '/assets/pdf/cv___WILLIAM_T__W__JUGUE__data_analyst_ (4).pdf' | relative_url }}" target="_blank" class="botao-curriculo">
+  Ver currículo
+</a>
+
+Link para currículo de Professor Universitário
+<a href="{{ '/assets/pdf/cv___WILLIAM_T__W__JUGUE__universitário_.pdf' | relative_url }}" target="_blank" class="botao-curriculo">
   Ver currículo
 </a>
 
