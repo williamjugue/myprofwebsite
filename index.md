@@ -13,7 +13,7 @@ Link para currículo de Analista de Dados
 </a>
 
 Link para currículo de Professor Universitário
-<a href="{{ '/assets/pdf/cv___WILLIAM_T__W__JUGUE__data_analyst_ (4).pdf' | relative_url }}" target="_blank" class="botao-curriculo2">
+<a href="{{ '/assets/pdf/cv___WILLIAM_T__W__JUGUE__universitário_.pdf' | relative_url }}" target="_blank" class="botao-curriculo2">
   Ver currículo
 </a>
 

@@ -11,7 +11,7 @@ Link para currículo de Analista de Dados
 </a>
 
 Link para currículo de Professor Universitário
-<a href="{{ '/assets/pdf/cv___WILLIAM_T__W__JUGUE__data_analyst_ (4).pdf' | relative_url }}" target="_blank" class="botao-curriculo2">
+<a href="{{ '/assets/pdf/cv___WILLIAM_T__W__JUGUE__universitário_.pdf' | relative_url }}" target="_blank" class="botao-curriculo2">
   Ver currículo
 </a>
 
@@ -51,5 +51,5 @@ Estou atualmente na carreira de **Analista de Dados (Data Analyst)**. Tenho as s
     * Participou do I encontro de GEANT4/ROOT na UNIFESP Diadema. O *Project Geant* é um projeto aberto em colaboração com o CERN que é a base para a simulação Monte Carlo feita durante o doutorado para simular as interações da radiação com a matéria e estudar o dano.
     Link para certificado do curso de Geant4
 <a href="{{ '/assets/pdf/certificadoGeant.pdf' | relative_url }}" target="_blank" class="botao-geant">
-  Ver currículo
+  Ver certificado
 </a>
